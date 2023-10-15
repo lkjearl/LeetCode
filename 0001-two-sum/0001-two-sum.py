@@ -4,5 +4,5 @@ class Solution:
         for i, num in enumerate(nums):
             if remainder and (target - num) in remainder:
                 return [remainder[(target - num)], i]
-            else:
-                remainder[num] = i
+            
+            remainder[num] = i
